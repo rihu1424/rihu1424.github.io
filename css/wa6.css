@@ -8,14 +8,38 @@ top: 50px;
 left: 50px;
 }
 
+.scorebox {
+    width: 80px;
+    height: 60px;
+    transform: translate(170px,25px);
+    color: white;
+    font-size: 40px;
+}
+
 .scoreboard {
     position: absolute;
     background-color: blue;
-    border: 10px solid;
+    border: 8px solid;
     border-color: white;
     width: 400px;
-    height: 90px;
+    height: 80px;
     transform: translate(0px,-5px);
+}
+
+.waterpolo {
+    position: absolute;
+    background-color: white;
+    border: 3px solid;
+    border-color: rgb(128,128,128);
+    width: 200px;
+    height: 70px;
+    transform: translate(1050px,-30px);
+}
+
+.waterpolo img {
+    max-width: 100%;
+    transform: translate(0px, 4px);
+    position: absolute;
 }
 
 .greece {
@@ -28,8 +52,8 @@ left: 50px;
 }
 
 .greece img {
-    max-width: 80px;
-    height: 80px;
+    max-width: 60px;
+    height: 60px;
     left: 10px;
     transform: translate(10px, 0px);
     position: absolute;
@@ -44,39 +68,14 @@ left: 50px;
 }
 
 .hungary img{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-}
-
-.scorebox {
-    width: 80px;
+    width: 60px;
     height: 60px;
-    transform: translate(170px,25px);
-    color: white;
-    font-size: 40px;
-}
-
-
-.waterpolo {
-    width: 200px;
-    height: 70px;
-    transform: translate(1050px,-30px);
     position: absolute;
-    background-color: white;
-    border: 3px solid;
-    border-color: rgb(128,128,128);
-}
-
-.waterpolo img {
-    max-width: 100%;
-    transform: translate(0px, 4px);
-    position: absolute;
+    transform: translate(20px, 0px);
 }
 
 body {
     background-image: url(../img/waterpolo.jpeg);
     background-repeat: no-repeat;
-    background-size: 90rem;
-
+    background-size: cover
 }
