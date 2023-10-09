@@ -9,13 +9,13 @@ left: 50px;
 }
 
 .scoreboard {
-    width: 400px;
-    height: 90px;
-    transform: translate(0px,-5px);
     position: absolute;
     background-color: blue;
     border: 10px solid;
     border-color: white;
+    width: 400px;
+    height: 90px;
+    transform: translate(0px,-5px);
 }
 
 .greece {
@@ -28,7 +28,7 @@ left: 50px;
 }
 
 .greece img {
-    max-width: 100%;
+    max-width: 80px;
     height: 80px;
     left: 10px;
     transform: translate(10px, 0px);
@@ -44,7 +44,7 @@ left: 50px;
 }
 
 .hungary img{
-    max-width: 100%;
+    width: 80px;
     height: 80px;
     position: absolute;
 }
@@ -64,7 +64,7 @@ left: 50px;
     transform: translate(1050px,-30px);
     position: absolute;
     background-color: white;
-    border: 5px solid;
+    border: 3px solid;
     border-color: rgb(128,128,128);
 }
 
@@ -78,5 +78,5 @@ body {
     background-image: url(../img/waterpolo.jpeg);
     background-repeat: no-repeat;
     background-size: 90rem;
-    
+
 }
