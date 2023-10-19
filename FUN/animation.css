@@ -1,0 +1,41 @@
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+p {
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+  }
+
+.slidein {
+    animation-duration: 3s;
+    animation-name: slidenshit;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+  
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+      margin-bottom: 200%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      margin-bottom: 50%;
+    }
+
+    75% {
+        font-size: 200%;
+        margin-left: 25%;
+        width: 150%;
+      }
+}
