@@ -4,7 +4,7 @@ body {
 }
 
 .title {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -15,19 +15,56 @@ body {
     background-size: cover;
 }
 
-h1 {
+.title h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 100px;
+    position: sticky;
+    display: flex;
+    margin-top: 1vw;
+    padding-right: 2vw;
+    padding-left:1vw;
+    background-color: rgb(211,211,211, 0.25);
 }
 
 .intro {
-    padding-left: 20px;
-    text-align: left;
+    margin-top:-20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     font-style:italic;
     font-size: large;
+    background-color: lightgray;
+    width: 100%;
+    background-size: 100000px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
+.intro h3 {
+    padding-left: 30px
+}
+
+.intro p {
+    text-align:right;
+    padding-right: 30px;
+}
+
+.intro img {
+    position: sticky;
+    display: flex;
+    width: 50%;
+    padding-bottom: 30px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .intro {
+      flex-direction: column;
+      align-items: center;
+      grid-template-columns: 1fr;
+      text-align: center;
+    } 
+  } 
 
 
 
