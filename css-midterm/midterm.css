@@ -3,6 +3,7 @@
         padding: 0;
     }
 
+/* TITLE*/
     .title {
         padding-bottom: 100px;
         text-align: right;
@@ -25,45 +26,90 @@
         padding-left:1vw;
         background-color: rgb(211,211,211, 0.25);
     }
-
+/* Intro */
     .intro {
         font-family: Arial, Helvetica, sans-serif;
         background-color: bisque;
+        background-size: cover;
         padding: none;
         border-radius: 10px;
-        margin: 0 auto;
+        margin: 10 auto;
     }
+
 
     .intro h3 {
         font-size: 24px;
         color: black;
         margin-bottom: 20px;
+        margin-top: 0px;
+        padding: 10px;
     }
     
     .intro p {
         font-size: 16px;
         color: #666;
         line-height: 1.5;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
     
     .intro img {
-        max-width: 25%;
+        max-width: 18%;
         height: auto;
         display: block;
-        margin: 0 auto;
+        float: left;
+        margin-right: 10px;
     }
+/* Events */
 
-  
-  
-  
-  
-  
-  
-
-.events {
-    font-family: helvetica;
+.event{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 30px;
+    border-radius: 10px; 
+    background-color: #f4f4f4;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.event p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color:  black;
+    padding-right: 35px;
+}
+
+.eventheader{
+    display: flex; 
+    justify-content: space-between;
+    grid-column: span 2;
+    align-items: center;
+}
+
+.eventheader h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.eventheader h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    align-self: center;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .intro {
