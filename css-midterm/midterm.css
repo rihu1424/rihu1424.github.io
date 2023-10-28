@@ -1,60 +1,68 @@
-body { 
-    margin: 0;
-    padding: 0;
-}
+    body { 
+        margin: 0;
+        padding: 0;
+    }
 
-.title {
-    padding-bottom: 100px;
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    font-size: x-large;
-    background-image: url('img/symphony.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+    .title {
+        padding-bottom: 100px;
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        font-size: x-large;
+        background-image: url('img/symphony.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
-.title h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    position: sticky;
-    display: flex;
-    margin-top: 1vw;
-    padding-right: 2vw;
-    padding-left:1vw;
-    background-color: rgb(211,211,211, 0.25);
-}
+    .title h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        position: sticky;
+        display: flex;
+        margin-top: 1vw;
+        padding-right: 2vw;
+        padding-left:1vw;
+        background-color: rgb(211,211,211, 0.25);
+    }
 
-.intro {
-    margin-top:-20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style:italic;
-    font-size: large;
-    background-color: lightgray;
-    width: 100%;
-    background-size: 100000px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
+    .intro {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: bisque;
+        padding: none;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
 
-.intro h3 {
-    padding-left: 30px
-}
+    .intro h3 {
+        font-size: 24px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    
+    .intro p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    .intro img {
+        max-width: 25%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
-.intro p {
-    text-align:right;
-    padding-right: 30px;
-}
+  
+  
+  
+  
+  
+  
 
-.intro img {
-    position: sticky;
-    display: flex;
-    width: 50%;
-    padding-bottom: 30px;
-
+.events {
+    font-family: helvetica;
 }
 
 @media only screen and (max-width: 600px) {
@@ -62,8 +70,12 @@ body {
       flex-direction: column;
       align-items: center;
       grid-template-columns: 1fr;
-      text-align: center;
+      padding: 0;
     } 
+    .intro img{
+        width: 0%;
+    }
+
   } 
 
 
