@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50vw;
+}
+
+label {
+  font-weight: bold;
+}
+
+div {
+  padding-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 150px;
+}
+
+button {
+  font-style: italic;
+  font-size: large;
+  width: 200px;
+  height: 100px;
+}
+
+p {
+  background: lightblue;
+  padding: 15px;
+  visibility: hidden;
+  text-align: left;
+}
