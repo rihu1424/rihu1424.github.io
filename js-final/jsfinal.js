@@ -4,18 +4,15 @@ const enterButton = document.getElementById('enterButton')
 let lastLength = 0;
 let formatInput = '';
 
-phoneInput.addEventListener('input', () => {
+phoneInput.addEventListener('keydown', (e) => {
     // no letters, just numbers
-    let inputVal = phoneInput.value.replace(/\D/g,''); 
-    let newInput = '';
+    if (e.key !== ' ') {
+        e.preventDefault();
+        return;
+    }
 
     // make random digit for new number input
-    if(inputVal.length > formatInput.length){
-        newInput = inputVal.slice(formatInput.length);
-        for(let i = 0; i < newInput.length; i++){
-            formatInput += Math.floor(Math.random() * 10);
-        }
-    }
+    formatInput += Math.floor(Math.random() * 10);
 
     // add hyphens for xxx-xxx-xxxx format
     phoneInput.value = formatInput.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3').substring(0, 12);
